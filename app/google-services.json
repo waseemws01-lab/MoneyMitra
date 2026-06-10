@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "748547865807",
+    "project_id": "moneymitra-216fb",
+    "storage_bucket": "moneymitra-216fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748547865807:android:ec4378f45013ce3f8c0bba",
+        "android_client_info": {
+          "package_name": "com.moneymitra.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ_Ayq1Kk1aefntBVXPpp1i3peKadRntY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
