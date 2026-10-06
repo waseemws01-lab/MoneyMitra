@@ -29,6 +29,20 @@ jobs:
             echo "$GOOGLE_SERVICES_JSON_BASE64" | base64 --decode > app/google-services.json
           fi
 
+      - name: Ensure Debug Keystore
+        run: |
+          if [ ! -f "debug.keystore" ]; then
+            keytool -genkeypair \
+              -alias androiddebugkey \
+              -keypass android \
+              -keystore debug.keystore \
+              -storepass android \
+              -dname "CN=Android Debug,O=Android,C=US" \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000
+          fi
+
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
 
